@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hedding"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:text="HOME"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/list_item"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:id="@+id/rv_list" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/tv_no_data"
+        android:visibility="gone"
+        android:text="Data Not Found"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/list_item"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        android:id="@+id/rv_fav" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/tv_home"
+                android:text="HOME"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="#B7B7B7"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/tv_fav"
+                android:text="FAVOURITE"/>
+        </LinearLayout>
+
+
+
+</LinearLayout>
